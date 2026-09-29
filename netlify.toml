@@ -1,0 +1,9 @@
+# Only the built page is published; src/ and tools/ stay in the repo but not on the site.
+[build]
+  publish = "branding"
+
+# Old links to /branding/ keep working
+[[redirects]]
+  from = "/branding/*"
+  to = "/:splat"
+  status = 301

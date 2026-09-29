@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="{{lang}}" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{meta.title}}</title>
+  <meta name="description" content="{{meta.description}}">
+  <link rel="canonical" href="{{meta.canonical}}">
+  <meta property="og:title" content="{{meta.title}}">
+  <meta property="og:description" content="{{meta.description}}">
+  <meta property="og:image" content="{{meta.canonical}}assets/img/hero-1440.webp">
+  <meta name="theme-color" content="#2f2b3d">
+  <link rel="icon" href="assets/logos/bw-trailers-mark-asphalt.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/michroma-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/lato-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" type="image/avif" imagesrcset="{{srcset:hero:avif}}" imagesizes="100vw">
+  <script>document.documentElement.className = "js";</script>
+  <link rel="stylesheet" href="assets/css/branding.css">
+  <script src="assets/js/branding.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#inhoud">{{a11y.skip}}</a>
+
+  <header class="site-header">
+    <div class="topbar">
+      <div class="wrap topbar__inner">
+        <nav aria-label="{{a11y.service_label}}">
+          <ul class="topbar__links">
+            <li><a href="{{url.info}}">{{nav.info}}</a></li>
+            <li><a href="{{url.about}}">{{nav.about}}</a></li>
+            <li><a href="{{url.contact}}">{{nav.contact}}</a></li>
+          </ul>
+        </nav>
+        <div class="lang" data-disclosure>
+          <button class="lang__toggle" type="button" aria-expanded="false" aria-controls="lang-list" aria-label="{{a11y.lang_label}}">
+            <span aria-hidden="true">{{nav.current_lang}}</span>
+            <svg class="chevron" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+          </button>
+          <ul class="lang__list" id="lang-list">
+            <li><a href="{{url.lang_be_fr}}" hreflang="fr-BE" lang="fr">{{nav.lang_be_fr}}</a></li>
+            <li><a href="{{url.lang_be_nl}}" hreflang="nl" aria-current="true">{{nav.lang_be_nl}}</a></li>
+            <li><a href="{{url.lang_fr}}" hreflang="fr" lang="fr">{{nav.lang_fr}}</a></li>
+            <li><a href="{{url.lang_int}}" hreflang="en" lang="en">{{nav.lang_int}}</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="mainbar">
+      <div class="wrap mainbar__inner">
+        <a class="brand" href="{{url.home}}" aria-label="{{a11y.home}}">
+          {{svg:bw-trailers-mark-asphalt|brand__mark}}
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+          <span class="menu-toggle__bars" aria-hidden="true"></span>
+          <span>{{a11y.menu_open}}</span>
+        </button>
+        <nav class="main-nav" id="main-nav" aria-label="{{a11y.menu_label}}">
+          <ul class="main-nav__list">
+            <li><a href="{{url.home}}">{{nav.home}}</a></li>
+            <li class="has-sub" data-disclosure>
+              <a href="{{url.trailers}}">{{nav.trailers}}</a>
+              <button class="sub-toggle" type="button" aria-expanded="false" aria-controls="sub-trailers" aria-label="{{a11y.submenu}}: {{nav.trailers}}">
+                <svg class="chevron" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+              </button>
+              <ul class="sub" id="sub-trailers">
+                <li><a href="{{url.trailers}}">{{nav.trailers_all}}</a></li>
+                <li><a href="{{url.type_flatbed}}">{{nav.type_flatbed}}</a></li>
+                <li><a href="{{url.type_tipper}}">{{nav.type_tipper}}</a></li>
+                <li><a href="{{url.type_box}}">{{nav.type_box}}</a></li>
+                <li><a href="{{url.type_animals}}">{{nav.type_animals}}</a></li>
+                <li><a href="{{url.type_closed}}">{{nav.type_closed}}</a></li>
+                <li><a href="{{url.type_luggage}}">{{nav.type_luggage}}</a></li>
+                <li><a href="{{url.type_moto}}">{{nav.type_moto}}</a></li>
+                <li><a href="{{url.type_publicity}}">{{nav.type_publicity}}</a></li>
+              </ul>
+            </li>
+            <li class="has-sub" data-disclosure>
+              <a href="{{url.dealers}}">{{nav.dealers}}</a>
+              <button class="sub-toggle" type="button" aria-expanded="false" aria-controls="sub-dealers" aria-label="{{a11y.submenu}}: {{nav.dealers}}">
+                <svg class="chevron" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+              </button>
+              <ul class="sub" id="sub-dealers">
+                <li><a href="{{url.dealers}}">{{nav.dealers_all}}</a></li>
+                <li><a href="{{url.country_be}}">{{nav.country_be}}</a></li>
+                <li><a href="{{url.country_de}}">{{nav.country_de}}</a></li>
+                <li><a href="{{url.country_lu}}">{{nav.country_lu}}</a></li>
+                <li><a href="{{url.country_nl}}">{{nav.country_nl}}</a></li>
+                <li><a href="{{url.country_fr}}">{{nav.country_fr}}</a></li>
+              </ul>
+            </li>
+            <li class="main-nav__service"><a href="{{url.info}}">{{nav.info}}</a></li>
+            <li class="main-nav__service"><a href="{{url.about}}">{{nav.about}}</a></li>
+            <li class="main-nav__service"><a href="{{url.contact}}">{{nav.contact}}</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="inhoud">
+    <!-- Hero: photo, mission and vision -->
+    <section class="hero" aria-labelledby="hero-title">
+      {{pic:hero}}
+      <div class="wrap hero__inner">
+        <div class="hero__head">
+          <h1 class="hero__title" id="hero-title"><span class="label-oval">{{hero.title}}</span></h1>
+          <p class="hero__intro">{{hero.intro}}</p>
+          <p class="hero__actions">
+            <a class="btn btn--solid" href="#pakket">{{hero.cta_primary}}</a>
+            <a class="btn btn--ghost" href="#logo">{{hero.cta_secondary}}</a>
+          </p>
+        </div>
+        <div class="hero__statements">
+          <article class="statement">
+            <h2 class="statement__title">{{hero.mission_title}}</h2>
+            <p class="statement__sub">{{hero.mission_sub}}</p>
+            <p class="statement__text">{{hero.mission}}</p>
+          </article>
+          <article class="statement">
+            <h2 class="statement__title">{{hero.vision_title}}</h2>
+            <p class="statement__sub">{{hero.vision_sub}}</p>
+            <p class="statement__text">{{hero.vision}}</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story and core values -->
+    <section class="section story" aria-labelledby="story-title">
+      <div class="wrap story__grid">
+        <div class="story__text">
+          <h2 class="h2" id="story-title">{{story.title}}</h2>
+          <p class="story__lead">{{story.p1}}</p>
+          <p>{{story.p2}}</p>
+          <p>{{story.p3}}</p>
+        </div>
+        <div class="story__media">{{pic:story}}</div>
+      </div>
+      <div class="wrap values">
+        <h3 class="values__title">{{story.values_title}}</h3>
+        <ul class="values__list">
+          <li><h4>{{story.value1_title}}</h4><p>{{story.value1}}</p></li>
+          <li><h4>{{story.value2_title}}</h4><p>{{story.value2}}</p></li>
+          <li><h4>{{story.value3_title}}</h4><p>{{story.value3}}</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Logo: idea, clear space and minimum size -->
+    <section class="section logo" id="logo" aria-labelledby="logo-title">
+      <div class="wrap">
+        <div class="logo__hero">
+          <img class="logo__big" src="assets/logos/bw-trailers-logo-lime.svg" alt="{{logo.logo_alt}}" {{dim:bw-trailers-logo-lime}} loading="lazy">
+          <div class="logo__intro">
+            <h2 class="h2" id="logo-title">{{logo.title}}</h2>
+            <p>{{logo.intro}}</p>
+          </div>
+        </div>
+        <ul class="logo__points">
+          <li><h3>{{logo.point1_title}}</h3><p>{{logo.point1}}</p></li>
+          <li><h3>{{logo.point2_title}}</h3><p>{{logo.point2}}</p></li>
+          <li><h3>{{logo.point3_title}}</h3><p>{{logo.point3}}</p></li>
+        </ul>
+        <div class="rules">
+          <figure class="clearspace">
+            <div class="clearspace__zone">
+              <img src="assets/logos/bw-trailers-mark-white.svg" alt="{{logo.clear_alt}}" {{dim:bw-trailers-mark-white}} loading="lazy">
+              <span class="clearspace__x clearspace__x--top" aria-hidden="true">x</span>
+              <span class="clearspace__x clearspace__x--left" aria-hidden="true">x</span>
+            </div>
+            <figcaption>{{logo.clear_label}}</figcaption>
+          </figure>
+          <div class="rules__text">
+            <h3>{{logo.rules_title}}</h3>
+            <p>{{logo.clear}}</p>
+            <h4>{{logo.min_title}}</h4>
+            <ul class="rules__min">
+              <li>{{logo.min_mark}}</li>
+              <li>{{logo.min_logo}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Logo downloads -->
+    <section class="section downloads" id="downloads" aria-labelledby="downloads-title">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="h2" id="downloads-title">{{downloads.title}}</h2>
+          <p>{{downloads.intro}}</p>
+        </div>
+        <fieldset class="switch" data-version-switch>
+          <legend class="visually-hidden">{{downloads.version_legend}}</legend>
+          <label><input type="radio" name="version" value="logo" checked><span>{{downloads.version_logo}}</span></label>
+          <label><input type="radio" name="version" value="mark"><span>{{downloads.version_mark}}</span></label>
+        </fieldset>
+        <ul class="variants">
+          {{variants}}
+        </ul>
+      </div>
+    </section>
+
+    <!-- Colours -->
+    <section class="section colors" aria-labelledby="colors-title">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="h2" id="colors-title">{{colors.title}}</h2>
+          <p>{{colors.intro}}</p>
+        </div>
+        <ul class="swatches">
+          <li class="swatch swatch--asphalt">
+            <div class="swatch__chip"></div>
+            <div class="swatch__info">
+              <p class="swatch__role">{{colors.role_primary}}</p>
+              <h3 class="swatch__name">Asphalt Blue</h3>
+              <dl class="swatch__values">
+                <div><dt>HEX</dt><dd>#2f2b3d</dd></div>
+                <div><dt>RGB</dt><dd>47 43 61</dd></div>
+              </dl>
+              <button class="copy" type="button" data-copy="#2f2b3d">{{colors.copy}}<span class="visually-hidden"> Asphalt Blue</span></button>
+            </div>
+          </li>
+          <li class="swatch swatch--lime">
+            <div class="swatch__chip"></div>
+            <div class="swatch__info">
+              <p class="swatch__role">{{colors.role_accent}}</p>
+              <h3 class="swatch__name">Motion Lime</h3>
+              <dl class="swatch__values">
+                <div><dt>HEX</dt><dd>#a3be42</dd></div>
+                <div><dt>RGB</dt><dd>163 190 66</dd></div>
+                <div><dt>Pantone</dt><dd>369 C</dd></div>
+              </dl>
+              <button class="copy" type="button" data-copy="#a3be42">{{colors.copy}}<span class="visually-hidden"> Motion Lime</span></button>
+            </div>
+          </li>
+          <li class="swatch swatch--mist">
+            <div class="swatch__chip"></div>
+            <div class="swatch__info">
+              <p class="swatch__role">{{colors.role_secondary}}</p>
+              <h3 class="swatch__name">Horizon Mist</h3>
+              <dl class="swatch__values">
+                <div><dt>HEX</dt><dd>#e8f4fd</dd></div>
+                <div><dt>RGB</dt><dd>232 244 253</dd></div>
+              </dl>
+              <button class="copy" type="button" data-copy="#e8f4fd">{{colors.copy}}<span class="visually-hidden"> Horizon Mist</span></button>
+            </div>
+          </li>
+        </ul>
+        <p class="colors__note">{{colors.note}}</p>
+        <p class="visually-hidden" role="status" aria-live="polite" data-copy-status data-copied="{{colors.copied}}" data-failed="{{colors.copy_failed}}"></p>
+      </div>
+    </section>
+
+    <!-- Typography -->
+    <section class="section type" aria-labelledby="type-title">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="h2" id="type-title">{{type.title}}</h2>
+          <p>{{type.intro}}</p>
+        </div>
+        <div class="fonts">
+          <article class="font font--michroma">
+            <p class="font__glyphs" aria-hidden="true">Aa</p>
+            <h3 class="font__name">Michroma</h3>
+            <p class="font__role">{{type.michroma_role}}</p>
+            <p class="font__weights"><span>{{type.weights_label}}:</span> {{type.michroma_weights}}</p>
+            <p class="font__sample">{{type.michroma_sample}}</p>
+          </article>
+          <article class="font font--lato">
+            <p class="font__glyphs" aria-hidden="true">Aa</p>
+            <h3 class="font__name">Lato</h3>
+            <p class="font__role">{{type.lato_role}}</p>
+            <p class="font__weights"><span>{{type.weights_label}}:</span> {{type.lato_weights}}</p>
+            <p class="font__sample">{{type.lato_sample}}</p>
+            <p class="font__sample font__sample--bold">{{type.lato_sample}}</p>
+          </article>
+        </div>
+        <p class="type__note">{{type.print_note}}</p>
+      </div>
+    </section>
+
+    <!-- Applications -->
+    <section class="section applications" aria-labelledby="apps-title">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="h2" id="apps-title">{{applications.title}}</h2>
+          <p>{{applications.intro}}</p>
+        </div>
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--shirt">{{pic:app-shirt}}<figcaption>{{applications.shirt}}</figcaption></figure>
+          <figure class="gallery__item gallery__item--facade">{{pic:app-facade}}<figcaption>{{applications.facade}}</figcaption></figure>
+          <figure class="gallery__item gallery__item--cards">{{pic:app-cards}}<figcaption>{{applications.cards}}</figcaption></figure>
+          <figure class="gallery__item gallery__item--flags">
+            <div class="flags">
+              {{pic:app-flag-lime}}
+              {{pic:app-flag-asphalt}}
+              {{pic:app-flag-baseline}}
+            </div>
+            <figcaption>{{applications.flags}}</figcaption>
+          </figure>
+          <figure class="gallery__item gallery__item--trailer">{{pic:app-trailer}}<figcaption>{{applications.trailer}}</figcaption></figure>
+          <figure class="gallery__item gallery__item--plate">{{pic:app-plate}}<figcaption>{{applications.plate}}</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand package -->
+    <section class="section package" id="pakket" aria-labelledby="package-title">
+      <div class="wrap package__inner">
+        <div>
+          <h2 class="h2" id="package-title">{{package.title}}</h2>
+          <p>{{package.intro}}</p>
+          <p class="package__license">{{package.license}}</p>
+        </div>
+        <a class="btn btn--package" href="{{zip.href}}" download="{{zip.name}}">
+          {{svg:download-icon|btn__icon}}
+          <span>{{package.cta}}</span>
+          <span class="btn__meta">{{zip.meta}}</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="{{a11y.footer_label}}">
+    <div class="wrap footer__grid">
+      <div class="footer__brand">
+        {{svg:bw-trailers-logo-lime|footer__logo}}
+        <address>
+          <strong>{{footer.company}}</strong><br>
+          {{footer.street}}<br>
+          {{footer.city}}<br>
+          {{footer.region}}<br>
+          <a href="{{footer.phone_href}}">{{footer.phone}}</a><br>
+          <a href="mailto:{{footer.email}}">{{footer.email}}</a>
+        </address>
+      </div>
+      <nav aria-labelledby="footer-trailers">
+        <h2 class="footer__title" id="footer-trailers">{{footer.col_trailers}}</h2>
+        <ul>
+          <li><a href="{{url.type_flatbed}}">{{nav.type_flatbed}}</a></li>
+          <li><a href="{{url.type_tipper}}">{{nav.type_tipper}}</a></li>
+          <li><a href="{{url.type_box}}">{{nav.type_box}}</a></li>
+          <li><a href="{{url.type_moto}}">{{nav.type_moto}}</a></li>
+          <li><a href="{{url.type_animals}}">{{nav.type_animals}}</a></li>
+          <li><a href="{{url.type_closed}}">{{nav.type_closed}}</a></li>
+          <li><a href="{{url.type_luggage}}">{{nav.type_luggage}}</a></li>
+          <li><a href="{{url.type_publicity}}">{{nav.type_publicity}}</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="footer-nav">
+        <h2 class="footer__title" id="footer-nav">{{footer.col_nav}}</h2>
+        <ul>
+          <li><a href="{{url.home}}">{{nav.home}}</a></li>
+          <li><a href="{{url.trailers}}">{{nav.trailers}}</a></li>
+          <li><a href="{{url.dealers}}">{{nav.dealers}}</a></li>
+          <li><a href="{{url.about}}">{{nav.about}}</a></li>
+          <li><a href="{{url.info}}">{{nav.info}}</a></li>
+          <li><a href="{{url.contact}}">{{nav.contact}}</a></li>
+          <li><a href="{{url.faq}}">{{nav.faq}}</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="wrap footer__bottom">
+      <p>{{footer.copyright}}</p>
+      <ul class="footer__legal">
+        <li><a href="{{url.terms}}">{{footer.terms}}</a></li>
+        <li><a href="{{url.privacy}}">{{footer.privacy}}</a></li>
+        <li><a href="{{url.cookies}}">{{footer.cookies}}</a></li>
+      </ul>
+      <ul class="footer__langs" aria-label="{{footer.langs_label}}">
+        <li><a href="{{url.lang_be_fr}}" hreflang="fr-BE" lang="fr">FR-BE</a></li>
+        <li><a href="{{url.lang_fr}}" hreflang="fr" lang="fr">FR</a></li>
+        <li><a href="{{url.lang_int}}" hreflang="en" lang="en">EN</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

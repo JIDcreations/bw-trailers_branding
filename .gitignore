@@ -1,0 +1,7 @@
+# Brand source files (.ai/.pdf, hundreds of MB) stay local
+nieuwe huisstijl 2026/
+
+# OS / editor
+.DS_Store
+__pycache__/
+*.tmp
