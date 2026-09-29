@@ -505,20 +505,21 @@ button { font: inherit; color: inherit; }
   background: repeating-linear-gradient(-45deg, rgb(var(--color-lime-rgb) / 0.22) 0 1px, transparent 1px 9px);
 }
 .clearspace__zone img { width: var(--mark-w); background: var(--color-asphalt); }
-.clearspace__x {
+/* A B at exact clear-space height on each side of the mark */
+.clearspace__b {
   position: absolute;
-  font-family: var(--font-display);
-  font-size: var(--step--1);
-  color: var(--color-lime);
-  line-height: 1;
+  height: var(--x);
+  width: calc(var(--x) * 1.3046); /* B aspect ratio 224.15 / 171.82 */
+  fill: rgb(var(--color-lime-rgb) / 0.85);
 }
-.clearspace__x--top { top: calc(var(--x) / 2); left: 50%; transform: translate(-50%, -50%); }
-.clearspace__x--left { left: calc(var(--x) / 2); top: 50%; transform: translate(-50%, -50%); }
+.clearspace__b--top { top: 0; left: 50%; transform: translateX(-50%); }
+.clearspace__b--bottom { bottom: 0; left: 50%; transform: translateX(-50%); }
+/* Rotated so the height of the B spans the side gap */
+.clearspace__b--left { left: calc(var(--x) / 2); top: 50%; transform: translate(-50%, -50%) rotate(-90deg); }
+.clearspace__b--right { right: calc(var(--x) / 2); top: 50%; transform: translate(50%, -50%) rotate(90deg); }
 .clearspace figcaption { margin-top: 0.9rem; font-size: var(--step--1); color: var(--text-muted); }
 .rules__text { display: grid; gap: 0.9rem; max-width: 40ch; }
-.rules__text h4 { margin-top: 0.75rem; }
-.rules__text p, .rules__min { color: var(--text-muted); }
-.rules__min { display: grid; gap: 0.35rem; }
+.rules__text p { color: var(--text-muted); }
 
 @media (min-width: 60em) {
   .logo__hero { grid-template-columns: 1fr 1fr; gap: clamp(3rem, 6vw, 7rem); }

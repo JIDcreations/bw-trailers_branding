@@ -126,13 +126,10 @@
         "Dit ontwerp is niet gevoelig voor trends. Het had 30 jaar geleden kunnen bestaan, maar oogt door het strakke lettertype tegelijk heel modern."
       ]
     ],
-    "rules_title": "Vrije ruimte en minimumformaat",
+    "rules_title": "Vrije ruimte",
     "clear": "Houd rondom het logo minstens de hoogte van de B vrij. Geen tekst, rand of beeld binnen die zone.",
     "clear_label": "Vrije ruimte = hoogte van de B",
-    "min_title": "Minimumformaat",
-    "min_mark": "Beeldmerk: 48 px breed op scherm, 15 mm in druk.",
-    "min_logo": "Met baseline: 160 px breed op scherm, 35 mm in druk.",
-    "clear_alt": "Het beeldmerk met een gestippelde zone rondom, even breed als de hoogte van de letter B."
+    "clear_alt": "Het beeldmerk met een gestippelde zone rondom. Aan elke kant past precies een letter B, even hoog als de vrije ruimte."
   },
   "downloads": {
     "title": "logo downloaden",
@@ -244,7 +241,6 @@
       "SVG = vector, PNG = transparant, JPG = met achtergrond en vrije ruimte",
       "",
       "Vrije ruimte: houd rondom het logo minstens de hoogte van de B vrij.",
-      "Minimumformaat beeldmerk: 48 px / 15 mm. Met baseline: 160 px / 35 mm.",
       "",
       "Meer info: https://bwtrailers.be/branding/"
     ]
