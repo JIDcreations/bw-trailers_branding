@@ -22,79 +22,14 @@
   <a class="skip-link" href="#inhoud">{{a11y.skip}}</a>
 
   <header class="site-header">
-    <div class="topbar">
-      <div class="wrap topbar__inner">
-        <nav aria-label="{{a11y.service_label}}">
-          <ul class="topbar__links">
-            <li><a href="{{url.info}}">{{nav.info}}</a></li>
-            <li><a href="{{url.about}}">{{nav.about}}</a></li>
-            <li><a href="{{url.contact}}">{{nav.contact}}</a></li>
-          </ul>
-        </nav>
-        <div class="lang" data-disclosure>
-          <button class="lang__toggle" type="button" aria-expanded="false" aria-controls="lang-list" aria-label="{{a11y.lang_label}}">
-            <span aria-hidden="true">{{nav.current_lang}}</span>
-            <svg class="chevron" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
-          </button>
-          <ul class="lang__list" id="lang-list">
-            <li><a href="{{url.lang_be_fr}}" hreflang="fr-BE" lang="fr">{{nav.lang_be_fr}}</a></li>
-            <li><a href="{{url.lang_be_nl}}" hreflang="nl" aria-current="true">{{nav.lang_be_nl}}</a></li>
-            <li><a href="{{url.lang_fr}}" hreflang="fr" lang="fr">{{nav.lang_fr}}</a></li>
-            <li><a href="{{url.lang_int}}" hreflang="en" lang="en">{{nav.lang_int}}</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="mainbar">
-      <div class="wrap mainbar__inner">
-        <a class="brand" href="{{url.home}}" aria-label="{{a11y.home}}">
-          {{svg:bw-trailers-mark-asphalt|brand__mark}}
-        </a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
-          <span class="menu-toggle__bars" aria-hidden="true"></span>
-          <span>{{a11y.menu_open}}</span>
-        </button>
-        <nav class="main-nav" id="main-nav" aria-label="{{a11y.menu_label}}">
-          <ul class="main-nav__list">
-            <li><a href="{{url.home}}">{{nav.home}}</a></li>
-            <li class="has-sub" data-disclosure>
-              <a href="{{url.trailers}}">{{nav.trailers}}</a>
-              <button class="sub-toggle" type="button" aria-expanded="false" aria-controls="sub-trailers" aria-label="{{a11y.submenu}}: {{nav.trailers}}">
-                <svg class="chevron" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
-              </button>
-              <ul class="sub" id="sub-trailers">
-                <li><a href="{{url.trailers}}">{{nav.trailers_all}}</a></li>
-                <li><a href="{{url.type_flatbed}}">{{nav.type_flatbed}}</a></li>
-                <li><a href="{{url.type_tipper}}">{{nav.type_tipper}}</a></li>
-                <li><a href="{{url.type_box}}">{{nav.type_box}}</a></li>
-                <li><a href="{{url.type_animals}}">{{nav.type_animals}}</a></li>
-                <li><a href="{{url.type_closed}}">{{nav.type_closed}}</a></li>
-                <li><a href="{{url.type_luggage}}">{{nav.type_luggage}}</a></li>
-                <li><a href="{{url.type_moto}}">{{nav.type_moto}}</a></li>
-                <li><a href="{{url.type_publicity}}">{{nav.type_publicity}}</a></li>
-              </ul>
-            </li>
-            <li class="has-sub" data-disclosure>
-              <a href="{{url.dealers}}">{{nav.dealers}}</a>
-              <button class="sub-toggle" type="button" aria-expanded="false" aria-controls="sub-dealers" aria-label="{{a11y.submenu}}: {{nav.dealers}}">
-                <svg class="chevron" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
-              </button>
-              <ul class="sub" id="sub-dealers">
-                <li><a href="{{url.dealers}}">{{nav.dealers_all}}</a></li>
-                <li><a href="{{url.country_be}}">{{nav.country_be}}</a></li>
-                <li><a href="{{url.country_de}}">{{nav.country_de}}</a></li>
-                <li><a href="{{url.country_lu}}">{{nav.country_lu}}</a></li>
-                <li><a href="{{url.country_nl}}">{{nav.country_nl}}</a></li>
-                <li><a href="{{url.country_fr}}">{{nav.country_fr}}</a></li>
-              </ul>
-            </li>
-            <li class="main-nav__service"><a href="{{url.info}}">{{nav.info}}</a></li>
-            <li class="main-nav__service"><a href="{{url.about}}">{{nav.about}}</a></li>
-            <li class="main-nav__service"><a href="{{url.contact}}">{{nav.contact}}</a></li>
-          </ul>
-        </nav>
-      </div>
+    <div class="wrap site-header__inner">
+      <a class="brand" href="{{url.home}}" aria-label="{{a11y.home}}">
+        {{svg:bw-trailers-mark-asphalt|brand__mark}}
+      </a>
+      <a class="btn btn--back" href="{{url.home}}">
+        <svg class="btn__arrow" viewBox="0 0 16 12" aria-hidden="true"><path d="M6 1L1 6l5 5M1 6h14" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+        {{nav.back}}
+      </a>
     </div>
   </header>
 
@@ -279,43 +214,19 @@
   </main>
 
   <footer class="site-footer" aria-label="{{a11y.footer_label}}">
-    <div class="wrap footer__grid">
+    <div class="wrap footer__main">
       <div class="footer__brand">
         {{svg:bw-trailers-logo-lime|footer__logo}}
         <address>
           <strong>{{footer.company}}</strong><br>
-          {{footer.street}}<br>
-          {{footer.city}}<br>
-          {{footer.region}}<br>
-          <a href="{{footer.phone_href}}">{{footer.phone}}</a><br>
-          <a href="mailto:{{footer.email}}">{{footer.email}}</a>
+          {{footer.street}}, {{footer.city}}<br>
+          <a href="{{footer.phone_href}}">{{footer.phone}}</a> · <a href="mailto:{{footer.email}}">{{footer.email}}</a>
         </address>
       </div>
-      <nav aria-labelledby="footer-trailers">
-        <h2 class="t-h3 footer__title" id="footer-trailers">{{footer.col_trailers}}</h2>
-        <ul>
-          <li><a href="{{url.type_flatbed}}">{{nav.type_flatbed}}</a></li>
-          <li><a href="{{url.type_tipper}}">{{nav.type_tipper}}</a></li>
-          <li><a href="{{url.type_box}}">{{nav.type_box}}</a></li>
-          <li><a href="{{url.type_moto}}">{{nav.type_moto}}</a></li>
-          <li><a href="{{url.type_animals}}">{{nav.type_animals}}</a></li>
-          <li><a href="{{url.type_closed}}">{{nav.type_closed}}</a></li>
-          <li><a href="{{url.type_luggage}}">{{nav.type_luggage}}</a></li>
-          <li><a href="{{url.type_publicity}}">{{nav.type_publicity}}</a></li>
-        </ul>
-      </nav>
-      <nav aria-labelledby="footer-nav">
-        <h2 class="t-h3 footer__title" id="footer-nav">{{footer.col_nav}}</h2>
-        <ul>
-          <li><a href="{{url.home}}">{{nav.home}}</a></li>
-          <li><a href="{{url.trailers}}">{{nav.trailers}}</a></li>
-          <li><a href="{{url.dealers}}">{{nav.dealers}}</a></li>
-          <li><a href="{{url.about}}">{{nav.about}}</a></li>
-          <li><a href="{{url.info}}">{{nav.info}}</a></li>
-          <li><a href="{{url.contact}}">{{nav.contact}}</a></li>
-          <li><a href="{{url.faq}}">{{nav.faq}}</a></li>
-        </ul>
-      </nav>
+      <a class="btn btn--solid" href="{{url.home}}">
+        <svg class="btn__arrow" viewBox="0 0 16 12" aria-hidden="true"><path d="M6 1L1 6l5 5M1 6h14" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+        {{nav.back}}
+      </a>
     </div>
     <div class="wrap footer__bottom">
       <p>{{footer.copyright}}</p>
@@ -323,11 +234,6 @@
         <li><a href="{{url.terms}}">{{footer.terms}}</a></li>
         <li><a href="{{url.privacy}}">{{footer.privacy}}</a></li>
         <li><a href="{{url.cookies}}">{{footer.cookies}}</a></li>
-      </ul>
-      <ul class="footer__langs" aria-label="{{footer.langs_label}}">
-        <li><a href="{{url.lang_be_fr}}" hreflang="fr-BE" lang="fr">FR-BE</a></li>
-        <li><a href="{{url.lang_fr}}" hreflang="fr" lang="fr">FR</a></li>
-        <li><a href="{{url.lang_int}}" hreflang="en" lang="en">EN</a></li>
       </ul>
     </div>
   </footer>

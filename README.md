@@ -1,6 +1,7 @@
 # BW huisstijlpagina
 
-Statische pagina (HTML, CSS, vanilla JS) voor `bwtrailers.be/branding/`.
+Statische pagina (HTML, CSS, vanilla JS) voor het subdomein `branding.bwtrailers.be`.
+Minimale header en footer met een knop terug naar bwtrailers.be.
 
 ## Structuur
 

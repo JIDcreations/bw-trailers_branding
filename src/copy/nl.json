@@ -3,76 +3,22 @@
   "meta": {
     "title": "Huisstijl | BW Trailers",
     "description": "De huisstijl van BW: logo, kleuren, typografie en toepassingen. Download het logo in SVG, PNG of JPG, of het volledige pakket.",
-    "canonical": "https://bwtrailers.be/branding/"
+    "canonical": "https://branding.bwtrailers.be/"
   },
   "a11y": {
     "skip": "Naar de inhoud",
     "home": "BW Trailers, naar de startpagina",
-    "menu_open": "Menu",
-    "menu_label": "Hoofdmenu",
-    "service_label": "Servicemenu",
-    "lang_label": "Kies je land en taal",
-    "submenu": "Submenu openen",
     "footer_label": "Footer",
     "new_tab": "opent in een nieuw tabblad"
   },
   "nav": {
-    "info": "Info",
-    "about": "Over ons",
-    "contact": "Contact",
-    "home": "Home",
-    "trailers": "Aanhangwagens",
-    "trailers_all": "Alle aanhangwagens",
-    "type_flatbed": "Plateau",
-    "type_tipper": "Kipper",
-    "type_box": "Bakaanhangwagen",
-    "type_animals": "Dieren",
-    "type_closed": "Gesloten",
-    "type_luggage": "Bagage",
-    "type_moto": "Moto of quad",
-    "type_publicity": "Reclame",
-    "dealers": "Dealers",
-    "dealers_all": "Alle dealers",
-    "country_be": "België",
-    "country_de": "Duitsland",
-    "country_lu": "Luxemburg",
-    "country_nl": "Nederland",
-    "country_fr": "Frankrijk",
-    "faq": "Veelgestelde vragen",
-    "current_lang": "nl",
-    "lang_be_fr": "Belgique",
-    "lang_be_nl": "België / Nederland",
-    "lang_fr": "France",
-    "lang_int": "International"
+    "back": "Terug naar bwtrailers.be"
   },
   "url": {
     "home": "https://bwtrailers.be/",
-    "info": "https://bwtrailers.be/info/",
-    "about": "https://bwtrailers.be/over-ons/",
-    "contact": "https://bwtrailers.be/contact/",
-    "faq": "https://bwtrailers.be/faq/",
-    "trailers": "https://bwtrailers.be/aanhangwagens/",
-    "type_flatbed": "https://bwtrailers.be/aanhangwagen-types/plateau/",
-    "type_tipper": "https://bwtrailers.be/aanhangwagen-types/kipper/",
-    "type_box": "https://bwtrailers.be/aanhangwagen-types/bakaanhangwagen/",
-    "type_animals": "https://bwtrailers.be/aanhangwagen-types/dieren/",
-    "type_closed": "https://bwtrailers.be/aanhangwagen-types/gesloten/",
-    "type_luggage": "https://bwtrailers.be/aanhangwagen-types/bagage/",
-    "type_moto": "https://bwtrailers.be/aanhangwagen-types/moto-of-quad/",
-    "type_publicity": "https://bwtrailers.be/aanhangwagen-types/reclame/",
-    "dealers": "https://bwtrailers.be/dealers/",
-    "country_be": "https://bwtrailers.be/land/belgie/",
-    "country_de": "https://bwtrailers.be/land/duitsland/",
-    "country_lu": "https://bwtrailers.be/land/luxemburg/",
-    "country_nl": "https://bwtrailers.be/land/nederland/",
-    "country_fr": "https://bwtrailers.be/land/frankrijk/",
     "terms": "https://bwtrailers.be/algemene-voorwaarden/",
     "privacy": "https://bwtrailers.be/privacy-policy/",
-    "cookies": "https://bwtrailers.be/cookiebeleid/",
-    "lang_be_fr": "https://bwtrailers.be/fr-be/",
-    "lang_be_nl": "https://bwtrailers.be/",
-    "lang_fr": "https://bwtrailers.be/fr/",
-    "lang_int": "https://bwtrailers.be/en/"
+    "cookies": "https://bwtrailers.be/cookiebeleid/"
   },
   "hero": {
     "title": "trailers, built for you.",
@@ -242,7 +188,7 @@
       "",
       "Vrije ruimte: houd rondom het logo minstens de hoogte van de B vrij.",
       "",
-      "Meer info: https://bwtrailers.be/branding/"
+      "Meer info: https://branding.bwtrailers.be/"
     ]
   },
   "footer": {
@@ -253,13 +199,9 @@
     "email": "info@bwtrailers.be",
     "street": "Walemstraat 94 A-B",
     "city": "2570 Duffel",
-    "region": "Antwerpen, België",
-    "col_trailers": "Aanhangwagens",
-    "col_nav": "Navigeer naar",
     "copyright": "© 2026 BW Trailers",
     "terms": "Voorwaarden",
     "privacy": "Privacybeleid",
-    "cookies": "Cookiebeleid",
-    "langs_label": "Andere talen"
+    "cookies": "Cookiebeleid"
   }
 }
