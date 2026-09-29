@@ -11,6 +11,8 @@ All text lives in src/copy/<lang>.json. The template uses:
   {{svg:name|class}}    inline SVG from assets/logos (decorative)
   {{dim:name}}          width/height attributes of a logo SVG
   {{variants}}          logo download cards
+  {{logo_points}}       logo rationale (brand book p. 12)
+  {{swatches}}          colour swatches (brand book p. 14)
   {{zip.*}}             brand package link, name and size
 Stdlib only, no dependencies.
 """
@@ -145,9 +147,35 @@ def variants(copy):
             f'data-logo="bw-trailers-logo-{v}.svg" data-mark="bw-trailers-mark-{v}.svg" '
             f'data-alt-logo="{esc(d["alt_logo"])} {esc(name)}" data-alt-mark="{esc(d["alt_mark"])} {esc(name)}">'
             f"</div>"
-            f'<div class="variant__body"><h3 class="variant__name">{esc(name)}</h3>'
+            f'<div class="variant__body"><h3 class="t-h3 variant__name">{esc(name)}</h3>'
             f'<p class="variant__use">{esc(d[f"variant_{v}_use"])}</p>'
             f'<ul class="formats">{"".join(links)}</ul></div></li>'
+        )
+    return "\n          ".join(items)
+
+
+def logo_points(copy):
+    return "\n          ".join(
+        f'<li><h3 class="t-h2">{esc(title)}</h3><p>{esc(text)}</p></li>'
+        for title, text in copy["logo"]["points"]
+    )
+
+
+def swatches(copy):
+    c = copy["colors"]
+    items = []
+    for key, name, hex_, rgb, extra in c["swatches"]:
+        values = [hex_, rgb] + ([extra] if extra else [])
+        lines = "".join(f"<li>{esc(v)}</li>" for v in values)
+        items.append(
+            f'<li class="swatch swatch--{key}">'
+            f'<div class="swatch__chip"></div>'
+            f'<div class="swatch__info">'
+            f'<h3 class="t-h3 swatch__name">{esc(name)}</h3>'
+            f'<ul class="swatch__values">{lines}</ul>'
+            f'<button class="copy" type="button" data-copy="{esc(hex_)}">{esc(c["copy"])}'
+            f'<span class="visually-hidden"> {esc(name)}</span></button>'
+            f"</div></li>"
         )
     return "\n          ".join(items)
 
@@ -205,6 +233,10 @@ def main():
             return f'width="{w}" height="{h}"'
         if token == "variants":
             return variants(copy)
+        if token == "logo_points":
+            return logo_points(copy)
+        if token == "swatches":
+            return swatches(copy)
         if token.startswith("zip."):
             return esc(zip_info[token[4:]])
         return esc(lookup(copy, token))

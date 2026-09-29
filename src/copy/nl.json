@@ -75,42 +75,57 @@
     "lang_int": "https://bwtrailers.be/en/"
   },
   "hero": {
-    "title": "Steviger dan nodig.",
-    "intro": "Dit is de huisstijl van BW: logo, kleuren en letters op één plek, klaar om te downloaden.",
+    "title": "trailers, built for you.",
     "mission_title": "Missie",
-    "mission_sub": "Waarom we bestaan",
-    "mission": "Het bieden van de meest duurzame en robuuste transportoplossing voor iedere gebruiker, van hobbyist tot professional in de bouw, door standaardmodellen naadloos te combineren met flexibel maatwerk en snelle levering.",
+    "mission_sub": "Waarom bestaan we? (heden)",
+    "mission": "“Het bieden van de meest duurzame en robuuste transportoplossing voor iedere gebruiker – van hobbyist tot professional in de bouw – door standaardmodellen naadloos te combineren met flexibel maatwerk en snelle levering.”",
     "vision_title": "Visie",
-    "vision_sub": "Waar we naartoe gaan",
-    "vision": "Onze positie als Europese kwaliteitsstandaard verankeren door te blijven innoveren in productie en service, zonder onze roots van persoonlijke flexibiliteit ooit te verliezen.",
+    "vision_sub": "Waar gaan we naartoe? (toekomst)",
+    "vision": "“Onze positie als Europese kwaliteitsstandaard verankeren door te blijven innoveren in productie en service, zonder onze roots van persoonlijke flexibiliteit ooit te verliezen.”",
     "cta_primary": "Download het pakket",
     "cta_secondary": "Bekijk het logo",
     "image_alt": "Zwart-witfoto van bovenaf: een auto met een BW-aanhangwagen op een lege autosnelweg."
   },
   "story": {
-    "title": "Ons verhaal",
+    "title": "het verhaal",
     "p1": "Wij bouwen aanhangwagens niet gewoon ‘volgens de regels’, wij bouwen ze steviger dan nodig.",
     "p2": "Zet tien trailers op een rij, en je haalt de BW er zo uit. Waarom? Omdat wij geen concessies doen op kwaliteit.",
     "p3": "Of het nu gaat om een standaardremorque voor de tuin of een speciaalbouw van 3,5 ton: het moet onverwoestbaar zijn.",
     "image_alt": "Zwart-witfoto van een auto die een BW-plateauwagen trekt op de autosnelweg.",
-    "values_title": "Waar we voor staan",
+    "values_title": "kernwaarden",
     "value1_title": "Kwaliteit",
     "value1": "We bouwen niet volgens de minimumeisen, maar volgens onze eigen maximumeisen. Een BW herken je direct aan de constructie.",
     "value2_title": "Flexibiliteit",
-    "value2": "‘Kan niet’ bestaat bijna niet. We denken mee en passen aan. Van standaard tot uniek stuk: de klantvraag leidt.",
+    "value2": "“Kan niet” bestaat bijna niet. We denken mee en passen aan. Van standaard tot uniek stuk: de klantvraag leidt.",
     "value3_title": "Betrouwbaarheid",
-    "value3": "We zijn een familiebedrijf met 30 jaar geschiedenis."
+    "value3": "We zijn een familiebedrijf met 30 jaar historie."
   },
   "logo": {
-    "title": "Geen schild, maar een kwaliteitslabel.",
-    "intro": "De letters staan ín het kader. Zo krijgt het logo de uitstraling van een keurmerk: dit is gekeurd, dit is in orde. Dat past bij wat we beloven: steviger dan nodig.",
+    "title_small": "Geen schild, maar een",
+    "title_big": "kwaliteitslabel.",
     "logo_alt": "Het BW-logo in lime: de letters BW in een ovaal kader, met daaronder ‘trailers, built for you.’",
-    "point1_title": "Een knipoog naar vroeger",
-    "point1": "De ovale vorm doet denken aan de landstickers die vroeger verplicht achterop auto’s en aanhangwagens zaten. Een badge van betrouwbaarheid.",
-    "point2_title": "Een beschermende rand",
-    "point2": "De dikke lijn omsluit de letters zoals een stevige trailer zijn lading. Niets kan bij de kern komen.",
-    "point3_title": "Tijdloos",
-    "point3": "Het had 30 jaar geleden kunnen bestaan, maar door de strakke letter oogt het vandaag modern.",
+    "points": [
+      [
+        "Kwaliteitslabel",
+        "Door de letters IN het kader te plaatsen, krijgt het logo de uitstraling van een keurmerkstempel. Dit communiceert onbewust: “dit is gekeurd, dit is in orde”, wat perfect past bij de claim “steviger dan nodig”."
+      ],
+      [
+        "Vorm",
+        "Door het sterke contrast is dit logo al van veraf leesbaar en de dikke omlijning houdt het beeldmerk visueel bij elkaar en maakt het herkenbaar. Het langgerekte label past heel goed bij het lettertype en bij de vorm B,W."
+      ],
+      [
+        "Knipoog naar vroeger",
+        "De ovale vorm roept de associatie op met de klassieke landstickers die vroeger achterop auto’s en aanhangwagens verplicht waren. Dit straalt vertrouwen en autoriteit uit. Het logo vormt een soort badge van betrouwbaarheid."
+      ],
+      [
+        "Symbolisch",
+        "De dikke lijn rondom de letters fungeert als een “beschermende buffer”. Het visualiseert bescherming en robuustheid. De letters (de lading) worden veilig omsloten door de stevige rand (de trailer). Niets kan bij de kern komen."
+      ],
+      [
+        "Tijdloos",
+        "Dit ontwerp is niet gevoelig voor trends. Het had 30 jaar geleden kunnen bestaan, maar oogt door het strakke lettertype tegelijk heel modern."
+      ]
+    ],
     "rules_title": "Vrije ruimte en minimumformaat",
     "clear": "Houd rondom het logo minstens de hoogte van de B vrij. Geen tekst, rand of beeld binnen die zone.",
     "clear_label": "Vrije ruimte = hoogte van de B",
@@ -120,7 +135,7 @@
     "clear_alt": "Het beeldmerk met een gestippelde zone rondom, even breed als de hoogte van de letter B."
   },
   "downloads": {
-    "title": "Logo downloaden",
+    "title": "logo downloaden",
     "intro": "SVG voor web en drukwerk. PNG met transparante achtergrond. JPG met achtergrond en vrije ruimte.",
     "version_legend": "Versie",
     "version_logo": "Met baseline",
@@ -138,30 +153,50 @@
     "alt_mark": "BW-beeldmerk, versie"
   },
   "colors": {
-    "title": "Kleuren",
-    "intro": "Asphalt Blue en Motion Lime dragen het merk. Horizon Mist geeft rust als lichte achtergrond.",
-    "role_primary": "Primair",
-    "role_accent": "Accent",
-    "role_secondary": "Secundair",
+    "title": "kleuren",
     "copy": "Kopieer HEX",
     "copied": "gekopieerd",
     "copy_failed": "Kopiëren lukt niet. Selecteer de code en kopieer ze zelf.",
-    "note": "Gebruik lime niet voor tekst op een witte of lichte achtergrond: het contrast is te laag om vlot te lezen."
+    "note": "Gebruik lime niet voor tekst op een witte of lichte achtergrond: het contrast is te laag om vlot te lezen.",
+    "swatches": [
+      [
+        "asphalt",
+        "Asphalt Blue",
+        "#2f2b3d",
+        "R:47 G:43 B:61",
+        ""
+      ],
+      [
+        "lime",
+        "Motion Lime",
+        "#a3be42",
+        "R:163 G:190 B:66",
+        "Pantone 369 C"
+      ],
+      [
+        "mist",
+        "Horizon Mist",
+        "#e8f4fd",
+        "R:232 G:244 B:253",
+        ""
+      ]
+    ]
   },
   "type": {
-    "title": "Typografie",
-    "intro": "Twee letters, elk met een eigen taak.",
-    "michroma_role": "Titels en ondertitels",
-    "michroma_weights": "Regular",
-    "michroma_sample": "trailers, built for you.",
-    "lato_role": "Lopende tekst en tussentitels",
-    "lato_weights": "Regular en Bold",
-    "lato_sample": "Zet tien trailers op een rij, en je haalt de BW er zo uit.",
-    "weights_label": "Gewichten",
-    "print_note": "In drukwerk vervangt Peridot PE (Adobe Fonts) de Lato."
+    "title": "typografie",
+    "h1_sample": "titels (H1)",
+    "h2_sample": "Ondertitels (H2)",
+    "h3_sample": "Ondertitel (H3)",
+    "body_sample": "Wij bouwen aanhangwagens niet gewoon ‘volgens de regels’, wij bouwen ze steviger dan nodig. (body)",
+    "michroma_meta": "Michroma, Regular",
+    "michroma_use": "Voor titels (H1) en ondertitels (H2).",
+    "lato_meta": "Lato, Bold/Regular",
+    "lato_use": "Voor alles wat met web te maken heeft, gebruiken we de Google font Lato.",
+    "peridot_meta": "Peridot PE Variable, Semibold/Regular",
+    "peridot_use": "We kiezen dit Adobe font voor print omdat het net iets verfijnder oogt dan Lato."
   },
   "applications": {
-    "title": "Toepassingen",
+    "title": "toepassingen",
     "intro": "Zo ziet BW eruit, van de gevel tot het typeplaatje op de trailer.",
     "shirt": "Bedrijfskledij",
     "shirt_alt": "Een man in een donker BW-shirt met ‘trailers, built for you.’ op de rug loopt naast een aanhangwagen in een natte straat.",
@@ -169,7 +204,7 @@
     "facade_alt": "Een loods bij valavond met een verlicht BW-logo in lime op de gevel.",
     "cards": "Visitekaartjes",
     "cards_alt": "Visitekaartjes in lime en Asphalt Blue met het BW-logo, op een ruwe betonnen ondergrond.",
-    "flags": "Beachvlaggen: de drie versies mogen door elkaar",
+    "flags": "Beachvlaggen: kunnen door elkaar gebruikt worden",
     "flag_lime_alt": "Beachvlag in lime met het BW-logo.",
     "flag_asphalt_alt": "Beachvlag in Asphalt Blue met het BW-logo in lime.",
     "flag_baseline_alt": "Beachvlag in Asphalt Blue met ‘trailers, built for you.’ in lime.",
@@ -179,7 +214,7 @@
     "trailer_alt": "Achterkant van een gegalvaniseerde BW-aanhangwagen op het gras, met het BW-logo op het spatbord."
   },
   "package": {
-    "title": "Alles in één pakket",
+    "title": "alles in één pakket",
     "intro": "Het logo in alle versies en formaten, de lettertypes Michroma en Lato met hun licentie, en een overzicht van de kleuren.",
     "cta": "Download het pakket",
     "meta": "ZIP, {size}",
@@ -189,15 +224,15 @@
       "BW – huisstijlpakket",
       "",
       "KLEUREN",
-      "Asphalt Blue (primair)   HEX #2f2b3d   RGB 47 43 61",
-      "Motion Lime (accent)     HEX #a3be42   RGB 163 190 66   Pantone 369 C",
-      "Horizon Mist (secundair) HEX #e8f4fd   RGB 232 244 253",
+      "Asphalt Blue   #2f2b3d   R:47 G:43 B:61",
+      "Motion Lime    #a3be42   R:163 G:190 B:66   Pantone 369 C",
+      "Horizon Mist   #e8f4fd   R:232 G:244 B:253",
       "Gebruik lime niet voor tekst op een witte of lichte achtergrond.",
       "",
       "LETTERTYPES",
-      "Michroma Regular: titels en ondertitels",
-      "Lato Regular en Bold: lopende tekst en tussentitels (web)",
-      "Peridot PE (Adobe Fonts): lopende tekst in drukwerk, niet in dit pakket",
+      "Michroma Regular: titels (H1, kleine letters) en ondertitels (H2)",
+      "Lato Bold: tussentitels (H3, hoofdletters) – Lato Regular: lopende tekst (web)",
+      "Peridot PE Variable (Adobe Fonts): drukwerk, niet in dit pakket",
       "",
       "LOGO",
       "logo-*  = met baseline ‘trailers, built for you.’",

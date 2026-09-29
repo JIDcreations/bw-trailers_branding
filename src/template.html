@@ -100,12 +100,11 @@
 
   <main id="inhoud">
     <!-- Hero: photo, mission and vision -->
-    <section class="hero" aria-labelledby="hero-title">
+    <section class="hero">
       {{pic:hero}}
       <div class="wrap hero__inner">
         <div class="hero__head">
-          <h1 class="hero__title" id="hero-title"><span class="label-oval">{{hero.title}}</span></h1>
-          <p class="hero__intro">{{hero.intro}}</p>
+          <h1 class="hero__title"><span class="label-oval">{{hero.title}}</span></h1>
           <p class="hero__actions">
             <a class="btn btn--solid" href="#pakket">{{hero.cta_primary}}</a>
             <a class="btn btn--ghost" href="#logo">{{hero.cta_secondary}}</a>
@@ -113,13 +112,13 @@
         </div>
         <div class="hero__statements">
           <article class="statement">
-            <h2 class="statement__title">{{hero.mission_title}}</h2>
-            <p class="statement__sub">{{hero.mission_sub}}</p>
+            <h2 class="t-h2 statement__title">{{hero.mission_title}}</h2>
+            <p class="t-h3">{{hero.mission_sub}}</p>
             <p class="statement__text">{{hero.mission}}</p>
           </article>
           <article class="statement">
-            <h2 class="statement__title">{{hero.vision_title}}</h2>
-            <p class="statement__sub">{{hero.vision_sub}}</p>
+            <h2 class="t-h2 statement__title">{{hero.vision_title}}</h2>
+            <p class="t-h3">{{hero.vision_sub}}</p>
             <p class="statement__text">{{hero.vision}}</p>
           </article>
         </div>
@@ -131,18 +130,18 @@
       <div class="wrap story__grid">
         <div class="story__text">
           <h2 class="h2" id="story-title">{{story.title}}</h2>
-          <p class="story__lead">{{story.p1}}</p>
+          <p>{{story.p1}}</p>
           <p>{{story.p2}}</p>
           <p>{{story.p3}}</p>
         </div>
         <div class="story__media">{{pic:story}}</div>
       </div>
       <div class="wrap values">
-        <h3 class="values__title">{{story.values_title}}</h3>
+        <h2 class="h2 values__title">{{story.values_title}}</h2>
         <ul class="values__list">
-          <li><h4>{{story.value1_title}}</h4><p>{{story.value1}}</p></li>
-          <li><h4>{{story.value2_title}}</h4><p>{{story.value2}}</p></li>
-          <li><h4>{{story.value3_title}}</h4><p>{{story.value3}}</p></li>
+          <li><h3 class="t-h2">{{story.value1_title}}</h3><p>{{story.value1}}</p></li>
+          <li><h3 class="t-h2">{{story.value2_title}}</h3><p>{{story.value2}}</p></li>
+          <li><h3 class="t-h2">{{story.value3_title}}</h3><p>{{story.value3}}</p></li>
         </ul>
       </div>
     </section>
@@ -152,15 +151,13 @@
       <div class="wrap">
         <div class="logo__hero">
           <img class="logo__big" src="assets/logos/bw-trailers-logo-lime.svg" alt="{{logo.logo_alt}}" {{dim:bw-trailers-logo-lime}} loading="lazy">
-          <div class="logo__intro">
-            <h2 class="h2" id="logo-title">{{logo.title}}</h2>
-            <p>{{logo.intro}}</p>
-          </div>
+          <h2 class="logo__title" id="logo-title">
+            <span class="logo__title-small">{{logo.title_small}}</span>
+            <span class="logo__title-big">{{logo.title_big}}</span>
+          </h2>
         </div>
         <ul class="logo__points">
-          <li><h3>{{logo.point1_title}}</h3><p>{{logo.point1}}</p></li>
-          <li><h3>{{logo.point2_title}}</h3><p>{{logo.point2}}</p></li>
-          <li><h3>{{logo.point3_title}}</h3><p>{{logo.point3}}</p></li>
+          {{logo_points}}
         </ul>
         <div class="rules">
           <figure class="clearspace">
@@ -172,9 +169,9 @@
             <figcaption>{{logo.clear_label}}</figcaption>
           </figure>
           <div class="rules__text">
-            <h3>{{logo.rules_title}}</h3>
+            <h3 class="t-h2">{{logo.rules_title}}</h3>
             <p>{{logo.clear}}</p>
-            <h4>{{logo.min_title}}</h4>
+            <h4 class="t-h3">{{logo.min_title}}</h4>
             <ul class="rules__min">
               <li>{{logo.min_mark}}</li>
               <li>{{logo.min_logo}}</li>
@@ -207,46 +204,9 @@
       <div class="wrap">
         <div class="section__head">
           <h2 class="h2" id="colors-title">{{colors.title}}</h2>
-          <p>{{colors.intro}}</p>
         </div>
         <ul class="swatches">
-          <li class="swatch swatch--asphalt">
-            <div class="swatch__chip"></div>
-            <div class="swatch__info">
-              <p class="swatch__role">{{colors.role_primary}}</p>
-              <h3 class="swatch__name">Asphalt Blue</h3>
-              <dl class="swatch__values">
-                <div><dt>HEX</dt><dd>#2f2b3d</dd></div>
-                <div><dt>RGB</dt><dd>47 43 61</dd></div>
-              </dl>
-              <button class="copy" type="button" data-copy="#2f2b3d">{{colors.copy}}<span class="visually-hidden"> Asphalt Blue</span></button>
-            </div>
-          </li>
-          <li class="swatch swatch--lime">
-            <div class="swatch__chip"></div>
-            <div class="swatch__info">
-              <p class="swatch__role">{{colors.role_accent}}</p>
-              <h3 class="swatch__name">Motion Lime</h3>
-              <dl class="swatch__values">
-                <div><dt>HEX</dt><dd>#a3be42</dd></div>
-                <div><dt>RGB</dt><dd>163 190 66</dd></div>
-                <div><dt>Pantone</dt><dd>369 C</dd></div>
-              </dl>
-              <button class="copy" type="button" data-copy="#a3be42">{{colors.copy}}<span class="visually-hidden"> Motion Lime</span></button>
-            </div>
-          </li>
-          <li class="swatch swatch--mist">
-            <div class="swatch__chip"></div>
-            <div class="swatch__info">
-              <p class="swatch__role">{{colors.role_secondary}}</p>
-              <h3 class="swatch__name">Horizon Mist</h3>
-              <dl class="swatch__values">
-                <div><dt>HEX</dt><dd>#e8f4fd</dd></div>
-                <div><dt>RGB</dt><dd>232 244 253</dd></div>
-              </dl>
-              <button class="copy" type="button" data-copy="#e8f4fd">{{colors.copy}}<span class="visually-hidden"> Horizon Mist</span></button>
-            </div>
-          </li>
+          {{swatches}}
         </ul>
         <p class="colors__note">{{colors.note}}</p>
         <p class="visually-hidden" role="status" aria-live="polite" data-copy-status data-copied="{{colors.copied}}" data-failed="{{colors.copy_failed}}"></p>
@@ -258,26 +218,24 @@
       <div class="wrap">
         <div class="section__head">
           <h2 class="h2" id="type-title">{{type.title}}</h2>
-          <p>{{type.intro}}</p>
         </div>
         <div class="fonts">
           <article class="font font--michroma">
-            <p class="font__glyphs" aria-hidden="true">Aa</p>
-            <h3 class="font__name">Michroma</h3>
-            <p class="font__role">{{type.michroma_role}}</p>
-            <p class="font__weights"><span>{{type.weights_label}}:</span> {{type.michroma_weights}}</p>
-            <p class="font__sample">{{type.michroma_sample}}</p>
+            <h3 class="t-h3 font__name">Michroma</h3>
+            <p class="font__h1" aria-hidden="true">{{type.h1_sample}}</p>
+            <p class="font__h2" aria-hidden="true">{{type.h2_sample}}</p>
+            <p class="font__meta">{{type.michroma_meta}}</p>
+            <p class="font__use">{{type.michroma_use}}</p>
           </article>
           <article class="font font--lato">
-            <p class="font__glyphs" aria-hidden="true">Aa</p>
-            <h3 class="font__name">Lato</h3>
-            <p class="font__role">{{type.lato_role}}</p>
-            <p class="font__weights"><span>{{type.weights_label}}:</span> {{type.lato_weights}}</p>
-            <p class="font__sample">{{type.lato_sample}}</p>
-            <p class="font__sample font__sample--bold">{{type.lato_sample}}</p>
+            <h3 class="t-h3 font__name">Lato</h3>
+            <p class="t-h3" aria-hidden="true">{{type.h3_sample}}</p>
+            <p class="font__body" aria-hidden="true">{{type.body_sample}}</p>
+            <p class="font__meta">{{type.lato_meta}}</p>
+            <p class="font__use">{{type.lato_use}}</p>
           </article>
         </div>
-        <p class="type__note">{{type.print_note}}</p>
+        <p class="type__note"><strong>{{type.peridot_meta}}.</strong> {{type.peridot_use}}</p>
       </div>
     </section>
 
@@ -337,7 +295,7 @@
         </address>
       </div>
       <nav aria-labelledby="footer-trailers">
-        <h2 class="footer__title" id="footer-trailers">{{footer.col_trailers}}</h2>
+        <h2 class="t-h3 footer__title" id="footer-trailers">{{footer.col_trailers}}</h2>
         <ul>
           <li><a href="{{url.type_flatbed}}">{{nav.type_flatbed}}</a></li>
           <li><a href="{{url.type_tipper}}">{{nav.type_tipper}}</a></li>
@@ -350,7 +308,7 @@
         </ul>
       </nav>
       <nav aria-labelledby="footer-nav">
-        <h2 class="footer__title" id="footer-nav">{{footer.col_nav}}</h2>
+        <h2 class="t-h3 footer__title" id="footer-nav">{{footer.col_nav}}</h2>
         <ul>
           <li><a href="{{url.home}}">{{nav.home}}</a></li>
           <li><a href="{{url.trailers}}">{{nav.trailers}}</a></li>
